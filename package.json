@@ -1,9 +1,9 @@
 {
     "name": "millisecond-converter",
-    "version": "1.2.0"
+    "version": "1.2.1",
     "repository": {
-    "type": "git",
-    "url": "https://github.com/LX8369/millisecond-converter.git"
-},
-"homepage": "https://github.com/LX8369/millisecond-converter#README.md"
+        "type": "git",
+        "url": "https://github.com/LX8369/millisecond-converter.git"
+    },
+    "homepage": "https://github.com/LX8369/millisecond-converter#README.md"
 }
