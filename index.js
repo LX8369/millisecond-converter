@@ -1,1 +1,3 @@
-
+exports.test = () => {
+    return "hello"
+}
