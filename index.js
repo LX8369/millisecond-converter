@@ -8,15 +8,19 @@ exports.secsMinsHours = (duration) => {
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-    return {
-        "hours": hours,
-        "mins": minutes,
-        "secs": seconds,
-        "milli": milliseconds
+    if (type == "obj") {
+        return {
+            "hours": hours,
+            "mins": minutes,
+            "secs": sec,
+            "milli": milliseconds
+        }
+    } else {
+        return `${hours} Hours, ${mins} Minutes and ${seconds} Seconds`
     }
 }
 
-exports.secsMinsHoursDays = (duration) => {
+exports.secsMinsHoursDays = (duration, type) => {
     var milliseconds = Math.floor((duration % 1000) / 100)
     var days = Math.floor(duration / (24 * 60 * 60 * 1000));
     var daysms = duration % (24 * 60 * 60 * 1000);
@@ -25,11 +29,16 @@ exports.secsMinsHoursDays = (duration) => {
     var minutes = Math.floor(hoursms / (60 * 1000));
     var minutesms = duration % (60 * 1000);
     var sec = Math.floor(minutesms / 1000);
-    return {
-        "days": days,
-        "hours": hours,
-        "mins": minutes,
-        "secs": sec,
-        "milli": milliseconds
+    if (type == "obj") {
+        return {
+            "days": days,
+            "hours": hours,
+            "mins": minutes,
+            "secs": sec,
+            "milli": milliseconds
+        }
+    } else {
+        return `${days} Days, ${hours} Hours, ${mins} Minutes and ${seconds} Seconds`
     }
+
 }
