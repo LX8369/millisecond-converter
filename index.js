@@ -28,7 +28,7 @@ exports.secsMinsHours = (duration, type) => {
         return {
             "hours": hours,
             "mins": minutes,
-            "secs": sec,
+            "secs": seconds,
             "milli": milliseconds
         }
     } else {
@@ -50,7 +50,7 @@ exports.secsMinsHoursDays = (duration, type) => {
         hourText = "Hour"
     } else if (minutes == 1) {
         minText = "Minute"
-    } else if (seconds == 1) {
+    } else if (sec == 1) {
         secText = "Second"
     } else if (days == 1) {
         dayText = "Day"
@@ -65,7 +65,7 @@ exports.secsMinsHoursDays = (duration, type) => {
             "milli": milliseconds
         }
     } else {
-        return `${days} ${dayText}, ${hours} ${hourText}, ${minutes} ${minText} and ${seconds} ${secText}`
+        return `${days} ${dayText}, ${hours} ${hourText}, ${minutes} ${minText} and ${sec} ${secText}`
 
     }
 }
