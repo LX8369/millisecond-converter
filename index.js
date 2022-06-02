@@ -1,4 +1,4 @@
-exports.secsMinsHours = (duration) => {
+exports.secsMinsHours = (duration, type) => {
     var milliseconds = Math.floor((duration % 1000) / 100),
         seconds = Math.floor((duration / 1000) % 60),
         minutes = Math.floor((duration / (1000 * 60)) % 60),
