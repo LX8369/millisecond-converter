@@ -37,7 +37,7 @@ exports.secsMinsHoursDays = (duration, type) => {
             "milli": milliseconds
         }
     } else {
-        return `${days} Days, ${hours} Hours, ${mins} Minutes and ${seconds} Seconds`
+        return `${days} Days, ${hours} Hours, ${minutes} Minutes and ${sec} Seconds`
     }
 
 }
