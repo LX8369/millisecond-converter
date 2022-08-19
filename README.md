@@ -1,6 +1,5 @@
 # millisecond-converter
-
-use this package if you suck at math
+this was more for testing how to create packages, I don't expect anyone to use it
 
 simple package to convert milliseconds to stuff
 
