@@ -3,7 +3,7 @@
     "version": "1.4.3",
     "repository": {
         "type": "git",
-        "url": "https://github.com/LX8369/millisecond-converter.git"
+        "url": "https://github.com/nekoify/millisecond-converter.git"
     },
-    "homepage": "https://github.com/LX8369/millisecond-converter#README.md"
+    "homepage": "https://github.com/nekoify/millisecond-converter#README.md"
 }
